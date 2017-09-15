@@ -4,6 +4,9 @@
 }
 
 .flip-container {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	perspective: 1000px;
 
 }
@@ -21,15 +24,28 @@
 .front, .back {
 	position: absolute;
 	backface-visibility: hidden;
+	border-radius: 3px;
 } 
 
 .front {
 	background-color: aqua;
 	z-index: 2;
 	transform: rotateY(0deg);
+	border-top: 3px solid pink;
+	box-shadow: 5px 5px 40px #888888;
 }
 
 .back {
 	background-color: purple;
 	transform: rotateY(180deg);
+	border-top: 3px solid blue;
+	box-shadow: 5px 5px 40px #888888;
 }
+
+img {
+	position: relative;
+	top: -10%;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 50%;
+};
